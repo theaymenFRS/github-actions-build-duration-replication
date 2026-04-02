@@ -22,7 +22,7 @@ L’objectif est de reproduire les analyses principales :
 - `docs/` — documentation détaillée : étapes de réplication, configuration expérimentale, description des projets et dépannage.
 - `figures/` — figure du pipeline et figures/résultats utilisés dans le mémoire.
 - `requirements.txt` / `environment.yml` — environnement logiciel recommandé.
-- `LICENSE` — emplacement réservé pour la licence. Choisir une licence finale avant publication.
+- `LICENSE` — MIT
 
 ## Remarques importantes
 
