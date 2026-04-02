@@ -1,0 +1,11 @@
+id_projet,depot_github,url_github,fichier_brut,lignes_brutes,fichier_traite,lignes_traitees
+Orange_OpenSourceouds_android,Orange-OpenSource/ouds-android,https://github.com/Orange-OpenSource/ouds-android,data/raw/Orange_OpenSourceouds_android.csv,6469,data/processed/Orange_OpenSourceouds_android_wf108176393_fixed.csv,2477
+bmad simbmad ecosystem,bmad-sim/bmad-ecosystem,https://github.com/bmad-sim/bmad-ecosystem,data/raw/bmad simbmad ecosystem.csv,2926,data/processed/bmad simbmad ecosystem_wf69576399_fixed.csv,1096
+ccpay,hmcts/ccpay-payment-app,https://github.com/hmcts/ccpay-payment-app,data/raw/ccpay.csv,2609,data/processed/ccpay_wf6192976_fixed.csv,2198
+collinbarrettFilterLists,collinbarrett/FilterLists,https://github.com/collinbarrett/FilterLists,data/raw/collinbarrettFilterLists.csv,3170,data/processed/collinbarrettFilterLists_wf75763098_fixed.csv,1124
+daos,daos-stack/daos,https://github.com/daos-stack/daos,data/raw/daos.csv,75570,data/processed/daos_wf9020028_fixed.csv,8672
+jod-yksilo-ui,Opetushallitus/jod-yksilo-ui,https://github.com/Opetushallitus/jod-yksilo-ui,data/raw/jod-yksilo-ui.csv,2301,data/processed/jod-yksilo-ui_wf83806327_fixed.csv,1627
+m2Gilesm2os,m2Giles/m2os,https://github.com/m2Giles/m2os,data/raw/m2Gilesm2os.csv,2551,data/processed/m2Gilesm2os_wf105026558_fixed.csv,1519
+pr3y_Bruce,pr3y/Bruce,https://github.com/pr3y/Bruce,data/raw/pr3y_Bruce.csv,2089,data/processed/pr3y_Bruce_wf121541665_fixed.csv,781
+radareorg_radare2,radareorg/radare2,https://github.com/radareorg/radare2,data/raw/radareorg_radare2.csv,16804,data/processed/radareorg_radare2_wf1989843_fixed.csv,4497
+rustlang,rust-lang/crates.io,https://github.com/rust-lang/crates.io,data/raw/rustlang.csv,7319,data/processed/rustlang_wf51073_fixed.csv,7082
