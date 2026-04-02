@@ -4,10 +4,10 @@ Prédiction de la durée de build dans GitHub Actions
 
 ## Objectif
 
-L’objectif du dépôt est de permettre à un lecteur externe de comprendre le pipeline expérimental et de reproduire les analyses principales **dans le même ordre que dans le mémoire** :
+L’objectif est de reproduire les analyses principales :
 
 1. **Collecte des données** avec l’outil externe GHAminer
-2. **Prétraitement** et filtrage des workflows pertinents
+2. **Prétraitement** et filtrage des workflows pertinents (build,CI,CD...ect.)
 3. **Ingénierie des caractéristiques** et sélection/réduction des variables
 4. **Entraînement des modèles pour la RQ1**
 5. **Génération des baselines**
