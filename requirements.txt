@@ -1,0 +1,9 @@
+# Environnement recommandé (reconstruction best-effort).
+# Les versions exactes d’origine n’étaient pas archivées dans le projet source.
+pandas>=2.0,<3
+numpy>=1.26,<3
+scikit-learn>=1.4,<2
+matplotlib>=3.8,<4
+scipy>=1.11,<2
+xgboost>=2.0,<3
+lightgbm>=4.0,<5
