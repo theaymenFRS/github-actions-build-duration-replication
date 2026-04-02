@@ -1,0 +1,6 @@
+=== BASELINE 1 (project=rustlang, lag-1, expanding folds) ===
+Iter1: train folds 1..5 -> test fold 6  RMSE=193.1161  NRMSE=1.1373  CVRMSE=0.3559  R²=-0.2962
+Iter2: train folds 1..6 -> test fold 7  RMSE=124.0744  NRMSE=1.2441  CVRMSE=0.2944  R²=-0.5510
+Iter3: train folds 1..7 -> test fold 8  RMSE=157.1210  NRMSE=1.3042  CVRMSE=0.3565  R²=-0.7046
+Iter4: train folds 1..8 -> test fold 9  RMSE=148.4185  NRMSE=1.2863  CVRMSE=0.3166  R²=-0.6580
+Iter5: train folds 1..9 -> test fold 10  RMSE=122.0005  NRMSE=1.2769  CVRMSE=0.2615  R²=-0.6340

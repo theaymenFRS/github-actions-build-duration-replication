@@ -1,0 +1,6 @@
+=== BASELINE 1 (project=orange, lag-1, expanding folds) ===
+Iter1: train folds 1..5 -> test fold 6  RMSE=175.7280  NRMSE=1.3171  CVRMSE=0.2123  R²=-0.7429
+Iter2: train folds 1..6 -> test fold 7  RMSE=180.8760  NRMSE=1.2557  CVRMSE=0.2062  R²=-0.5843
+Iter3: train folds 1..7 -> test fold 8  RMSE=269.8403  NRMSE=1.3808  CVRMSE=0.2946  R²=-0.9158
+Iter4: train folds 1..8 -> test fold 9  RMSE=258.9854  NRMSE=1.4627  CVRMSE=0.2742  R²=-1.1497
+Iter5: train folds 1..9 -> test fold 10  RMSE=202.4384  NRMSE=1.4089  CVRMSE=0.2032  R²=-0.9945
