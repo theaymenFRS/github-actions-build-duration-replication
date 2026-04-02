@@ -17,7 +17,7 @@ Il n’y a pas d’exécutable “prétraitement seul” : le flux complet reste
 
 ## Avant le prétraitement (collecte)
 
-Si vous recollectez les données avec **GHAminer**, vous pouvez **filtrer les exécutions par `workflow_id`** côté outil pour ne garder que le(s) workflow(s) ciblé(s). Ce n’est pas une étape du code Python de ce dépôt ; voir `scripts/data_collection/README.md`.
+Si vous recollectez les données avec **GHAminer**, vous pouvez **filtrer les exécutions par `workflow_id`** côté outil (GHAminer) pour ne garder que le(s) workflow(s) ciblé(s). Ce n’est pas une étape du code Python de ce dépôt ; voir `scripts/data_collection/README.md`.
 
 ## Entrées / sorties
 
