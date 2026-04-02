@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[margin=1in]{geometry}
+\pagenumbering{gobble}
+\begin{document}
+
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{0.85}
+\begin{longtable}{ll rrrr}
+\toprule
+\textbf{Project} & \textbf{Model} & \textbf{RMSE} & \textbf{NRMSE} & \textbf{R / R$^2$} & \textbf{CVRMSE} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Project} & \textbf{Model} & \textbf{RMSE} & \textbf{NRMSE} & \textbf{R / R$^2$} & \textbf{CVRMSE} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multirow{7}{*}{radare2} & RF & \textbf{1096.37} & 0.80 & \textbf{0.35} & 0.47 \\
+ & LGB & 1137.32 & 0.80 & 0.34 & 0.47 \\
+ & XGB & 1138.33 & 0.83 & 0.30 & 0.49 \\
+ & GBR & 1099.25 & \textbf{0.78} & 0.37 & \textbf{0.46} \\
+ & DT & 1190.69 & 0.87 & 0.23 & 0.51 \\
+ & Baseline lag-1 & 1596.02 & 1.16 & -0.36 & 0.68 \\
+ & Baseline 7 last means & 1349.09 & 0.98 & 0.02 & 0.58 \\
+\midrule
+\multirow{7}{*}{daos} & RF & 922.09 & 0.66 & 0.55 & 0.30 \\
+ & LGB & 866.66 & 0.62 & 0.60 & 0.28 \\
+ & XGB & \textbf{844.31} & \textbf{0.60} & \textbf{0.62} & \textbf{0.27} \\
+ & GBR & 848.36 & 1.88 & \textbf{0.62} & 0.28 \\
+ & DT & 1022.40 & 0.73 & 0.45 & 0.33 \\
+ & Baseline lag-1 & 1173.32 & 0.84 & 0.28 & 0.38 \\
+ & Baseline 7 last means & 1315.49 & 0.94 & 0.09 & 0.43 \\
+\midrule
+\multirow{7}{*}{ouds-android} & RF & 171.60 & \textbf{0.61} & -0.43 & 0.17 \\
+ & LGB & 191.09 & 1.32 & -0.77 & 0.19 \\
+ & XGB & 196.94 & 1.37 & -0.88 & 0.19 \\
+ & GBR & 173.96 & 1.21 & -0.47 & 0.17 \\
+ & DT & 172.77 & 1.20 & -0.45 & 0.17 \\
+ & Baseline lag-1 & 202.43 & 1.40 & -0.99 & 0.20 \\
+ & Baseline 7 last means & \textbf{151.63} & 1.05 & \textbf{-0.11} & \textbf{0.15} \\
+\midrule
+\multirow{7}{*}{FilterLists} & RF & 20.54 & 0.53 & 0.71 & 0.20 \\
+ & LGB & 21.14 & 0.54 & 0.69 & 0.20 \\
+ & XGB & \textbf{18.87} & \textbf{0.48} & \textbf{0.75} & \textbf{0.18} \\
+ & GBR & 19.20 & 0.49 & 0.74 & \textbf{0.18} \\
+ & DT & 23.95 & 0.62 & 0.61 & 0.23 \\
+ & Baseline lag-1 & 57.77 & 1.48 & -1.22 & 0.56 \\
+ & Baseline 7 last means & 41.00 & 1.06 & -0.14 & 0.40 \\
+\midrule
+\multirow{7}{*}{m2os} & RF & 1268.97 & 0.80 & 0.34 & 0.45 \\
+ & LGB & \textbf{1041.80} & \textbf{0.65} & \textbf{0.55} & \textbf{0.37} \\
+ & XGB & 1224.68 & 0.77 & 0.38 & 0.43 \\
+ & GBR & 1147.05 & 0.72 & 0.46 & 0.41 \\
+ & DT & 1324.47 & 0.83 & 0.28 & 0.47 \\
+ & Baseline lag-1 & 1435.35 & 0.90 & 0.16 & 0.50 \\
+ & Baseline 7 last means & 1778.61 & 1.12 & -0.29 & 0.63 \\
+\midrule
+\multirow{7}{*}{Bruce} & RF & 54.55 & 1.03 & -0.09 & 0.15 \\
+ & LGB & 60.70 & 1.15 & -0.35 & 0.17 \\
+ & XGB & 55.51 & 1.05 & -0.13 & 0.15 \\
+ & GBR & 55.58 & 1.05 & -0.13 & 0.15 \\
+ & DT & 63.09 & 1.19 & -0.46 & 0.17 \\
+ & Baseline lag-1 & \textbf{52.38} & \textbf{1.00} & \textbf{-0.02} & \textbf{0.14} \\
+ & Baseline 7 last means & 56.45 & 1.07 & -0.17 & 0.16 \\
+\midrule
+\multirow{7}{*}{rust-lang} & RF & \textbf{20.54} & \textbf{0.53} & \textbf{0.71} & 0.20 \\
+ & LGB & 51.83 & 0.54 & 0.70 & 0.11 \\
+ & XGB & 49.40 & 0.51 & 0.73 & \textbf{0.10} \\
+ & GBR & 49.79 & 0.52 & 0.72 & \textbf{0.10} \\
+ & DT & 60.69 & 0.63 & 0.59 & 0.13 \\
+ & Baseline lag-1 & 122.00 & 1.27 & -0.63 & 0.26 \\
+ & Baseline 7 last means & 99.42 & 1.04 & -0.08 & 0.21 \\
+\midrule
+\multirow{7}{*}{jod-yksilo} & RF & 109995.74 & 0.95 & 0.07 & 8.79 \\
+ & LGB & 111184.92 & 0.96 & 0.05 & 8.88 \\
+ & XGB & 113247.81 & 0.98 & 0.02 & 9.05 \\
+ & GBR & \textbf{83754.44} & \textbf{0.72} & \textbf{0.46} & \textbf{6.69} \\
+ & DT & 105065.76 & 0.91 & 0.15 & 8.39 \\
+ & Baseline lag-1 & 165616.65 & 1.44 & -1.09 & 13.23 \\
+ & Baseline 7 last means & 123582.41 & 1.07 & -0.16 & 9.87 \\
+\midrule
+\multirow{7}{*}{ccpay} & RF & \textbf{24.33} & \textbf{1.00} & \textbf{-0.02} & \textbf{0.07} \\
+ & LGB & 24.74 & 1.02 & -0.05 & \textbf{0.07} \\
+ & XGB & 25.40 & 1.05 & -0.11 & \textbf{0.07} \\
+ & GBR & 25.04 & 1.03 & -0.08 & \textbf{0.07} \\
+ & DT & 39.34 & 1.62 & -1.67 & 0.11 \\
+ & Baseline lag-1 & 37.06 & 1.53 & -1.39 & 0.11 \\
+ & Baseline 7 last means & 26.23 & 1.08 & -0.18 & \textbf{0.07} \\
+\midrule
+\multirow{7}{*}{bmad} & RF & 48.67 & 1.34 & -0.81 & 0.04 \\
+ & LGB & 43.08 & 1.18 & -0.42 & \textbf{0.03} \\
+ & XGB & 39.41 & 1.08 & -0.19 & \textbf{0.03} \\
+ & GBR & 39.52 & 1.08 & -0.19 & \textbf{0.03} \\
+ & DT & 48.67 & 1.34 & -0.81 & 0.04 \\
+ & Baseline lag-1 & 50.37 & 1.39 & -0.96 & 0.04 \\
+ & Baseline 7 last means & \textbf{38.92} & \textbf{1.07} & \textbf{-0.16} & \textbf{0.03} \\
+\end{longtable}
+
+\end{document}
