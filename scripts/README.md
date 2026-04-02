@@ -2,10 +2,6 @@
 
 Ce répertoire réorganise le code source archivé selon les étapes du pipeline expérimental.
 
-## Remarque importante
-
-Le code d’origine est en grande partie **monolithique** : le prétraitement, l’ingénierie des caractéristiques, l’entraînement et l’évaluation sont souvent intégrés dans les scripts de modélisation eux-mêmes. Le package conserve cette organisation aussi fidèlement que possible, tout en documentant le rôle de chaque script.
-
 ## Organisation
 
 - `data_collection/` — documentation pour l’étape de collecte externe avec GHAminer.
